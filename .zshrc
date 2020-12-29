@@ -98,12 +98,21 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# NVM Export
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
+export EDITOR="vim"
+
 alias gac="git add --all && git commit -S"
-alias py=/usr/bin/python3
+alias ghrcl="gh repo clone"
+alias ghrcr="gh repo create"
+alias minecraftss="cd ~/minecraft_server && java -Xmx1024M -Xms1024M -jar ./server.jar nogui"
 alias mongostart="sudo systemctl start mongod"
+alias nvc="nordvpn connect"
+alias nvd="nordvpn disconnect"
+alias py=/usr/bin/python3
+alias showip="curl ifconfig.me"
 
 path+=('/home/linuxbrew/.linuxbrew/bin')
 path+=('/home/claude/.local/bin')
