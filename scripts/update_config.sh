@@ -1,4 +1,4 @@
-bashrc() {
+settings_json() {
     cd ~/projects/config 
     cp ~/.config/Code/User/settings.json .
     git add .
