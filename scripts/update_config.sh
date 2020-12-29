@@ -10,6 +10,16 @@ settings_json() {
     echo "Updated settings.json using shell script"
 }
 
+vimrc() {
+    cd ~/projects/config 
+    cp ~/.vimrc . 
+    git add .vimrc 
+    desc=$1
+    git commit -S -m "$desc"
+    git push
+    echo "Updated .vimrc"
+}
+
 zshrc() {
     cd ~/projects/config 
     cp ~/.zshrc . 
