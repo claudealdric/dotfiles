@@ -123,3 +123,4 @@ alias showip="curl ifconfig.me"
 path+=('/home/linuxbrew/.linuxbrew/bin')
 path+=('/home/claude/.local/bin')
 export PATH
+
