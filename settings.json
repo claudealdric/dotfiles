@@ -46,5 +46,6 @@
     "<C-k>": false
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.fontFamily": "'Fira Code'"
+  "terminal.integrated.fontFamily": "'Fira Code'",
+  "tabnine.experimentalAutoImports": true
 }
