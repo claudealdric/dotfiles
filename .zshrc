@@ -113,6 +113,7 @@ alias nvc="nordvpn connect"
 alias nvd="nordvpn disconnect"
 alias py=/usr/bin/python3
 alias showip="curl ifconfig.me"
+alias update_zshrc="cd ~/projects/config && cp ~/.zshrc . && git add . && git commit -S -m \"Update .zshrc\" && git push"
 
 path+=('/home/linuxbrew/.linuxbrew/bin')
 path+=('/home/claude/.local/bin')
