@@ -1,11 +1,12 @@
 " Version 2.1
 colorscheme slate " UI theme
-set guifont=Consolas:h10:cANSI:qDRAFT " font face, size, etc.
+"set guifont=Consolas:h10:cANSI:qDRAFT " font face, size, etc.
+set guifont=Fira\ Code\ 10 " font face, size, etc.
 syntax enable " enable syntax processing
 set number " show line numbers
-set tabstop=4 " number of visual spaces per TAB
-set softtabstop=4 " number of spaces in tab when editing
-set shiftwidth=4 " number of spaces when indenting
+set tabstop=2 " number of visual spaces per TAB
+set softtabstop=2 " number of spaces in tab when editing
+set shiftwidth=2 " number of spaces when indenting
 set shiftround " use multiple of shiftwidth when indenting with '<' and '>'
 set expandtab " tabs are spaces
 set showcmd " show command in bottom bar
