@@ -41,9 +41,10 @@
   "[python]": {
     "editor.tabSize": 4
   },
-  "prettier.packageManager": "yarn",
   "vim.handleKeys": {
     "<C-w>": false,
     "<C-k>": false
-  }
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.fontFamily": "'Fira Code'"
 }
