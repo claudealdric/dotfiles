@@ -40,5 +40,10 @@
   "terminal.integrated.fontSize": 13,
   "[python]": {
     "editor.tabSize": 4
+  },
+  "prettier.packageManager": "yarn",
+  "vim.handleKeys": {
+    "<C-w>": false,
+    "<C-k>": false
   }
 }
