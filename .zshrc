@@ -117,6 +117,8 @@ alias showip="curl ifconfig.me"
 alias scripts="cd ~/projects/config/scripts"
 alias saud="sudo apt update"
 alias saug="sudo apt upgrade"
+alias sz="source ~/.zshrc"
+alias y="yarn"
 
 # Path variable
 path+=('/home/linuxbrew/.linuxbrew/bin')
