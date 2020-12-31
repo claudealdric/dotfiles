@@ -115,6 +115,8 @@ alias nvd="nordvpn disconnect"
 alias py=/usr/bin/python3
 alias showip="curl ifconfig.me"
 alias scripts="cd ~/projects/config/scripts"
+alias saud="sudo apt update"
+alias saug="sudo apt upgrade"
 
 # Path variable
 path+=('/home/linuxbrew/.linuxbrew/bin')
