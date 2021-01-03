@@ -115,6 +115,7 @@ alias minecraftss="cd ~/minecraft_server && java -Xmx1024M -Xms1024M -jar ./serv
 alias mongostart="sudo systemctl start mongod"
 alias nvc="nordvpn connect"
 alias nvd="nordvpn disconnect"
+alias nvs="nordvpn status"
 alias py=/usr/bin/python3
 alias showip="curl ifconfig.me"
 alias scripts="cd ~/projects/config/scripts"
