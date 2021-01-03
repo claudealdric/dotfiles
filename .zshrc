@@ -105,9 +105,12 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Aliases
+alias brv="brave-browser"
+alias brave="brave-browser"
 alias gac="git add --all && git commit -S"
 alias ghrcl="gh repo clone"
 alias ghrcr="gh repo create"
+alias ka="killall"
 alias minecraftss="cd ~/minecraft_server && java -Xmx1024M -Xms1024M -jar ./server.jar nogui"
 alias mongostart="sudo systemctl start mongod"
 alias nvc="nordvpn connect"
