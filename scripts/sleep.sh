@@ -3,7 +3,7 @@
 go_to_sleep() {
   echo "Sleeping in $1"
   sleep $1
-  systemctl suspend
+  systemctl suspend -i
   echo "Done"
 }
 
