@@ -75,7 +75,6 @@ set showmatch " highlight matching parentheses, brackets, etc.
 set incsearch " search as characters are entered
 set hlsearch " highlight matches
 set smarttab " lets tab key insert 'tab stops,' and Backspace deletes tabs
-set gdefault " use the 'g' flag by default
 set backspace=indent,eol,start
 set splitbelow " open horizontal splits on the bottom by default
 set splitright " open vertical splits on the right by default
