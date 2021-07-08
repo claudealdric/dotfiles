@@ -77,8 +77,16 @@ touch ~/.config/fish/config.fish
 echo "set fish_function_path $fish_function_path \"/usr/share/powerline/bindings/fish\"" >> ~/.config/fish/config.fish
 echo "powerline-setup" >> ~/.config/fish/config.fish
 
+# Clone config repository
+git clone https://github.com/claudealdric/config ~/config
+
 # Install Alacritty
 snap install alacritty --classic
+
+# Add Alacritty configuration file
+mkdir -p ~/.config/alacritty
+curl -o "alacritty.yml" https://raw.githubusercontent.com/claudealdric/config/main/alacritty.yml
+mv alacritty.yml ~/.config/alacritty
 
 # Add abbreviations
 abbr --add c clear
