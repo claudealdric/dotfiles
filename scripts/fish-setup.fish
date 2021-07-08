@@ -70,6 +70,13 @@ curl -fLo "Fira Code Light Nerd Font Complete.ttf" https://github.com/ryanoasis/
 curl -fLo "Fira Code Medium Nerd Font Complete.ttf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraCode/Medium/complete/Fira%20Code%20Medium%20Nerd%20Font%20Complete.ttf
 cd ~
 
+# Install powerline
+sudo add-apt-repository universe
+sudo apt install powerline -y
+touch ~/.config/fish/config.fish
+echo "set fish_function_path $fish_function_path \"/usr/share/powerline/bindings/fish\"" >> ~/.config/fish/config.fish
+echo "powerline-setup" >> ~/.config/fish/config.fish
+
 # Add abbreviations
 abbr --add c clear
 abbr --add gac "git add --all && git commit -S"
