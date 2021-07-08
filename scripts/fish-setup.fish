@@ -23,6 +23,9 @@ sudo snap install discord
 # Install Vim
 sudo apt install vim -y
 
+# Enable clipboard support in Vim
+sudo apt install vim-gtk -y
+
 # Set default editor to Vim
 set --global EDITOR /usr/bin/vim
 git config --global core.editor "vim"
