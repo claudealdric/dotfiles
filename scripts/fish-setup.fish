@@ -77,6 +77,9 @@ touch ~/.config/fish/config.fish
 echo "set fish_function_path $fish_function_path \"/usr/share/powerline/bindings/fish\"" >> ~/.config/fish/config.fish
 echo "powerline-setup" >> ~/.config/fish/config.fish
 
+# Install Alacritty
+snap install alacritty --classic
+
 # Add abbreviations
 abbr --add c clear
 abbr --add gac "git add --all && git commit -S"
