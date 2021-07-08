@@ -5,6 +5,9 @@ sudo add-apt-repository ppa:git-core/ppa
 sudo apt update
 sudo apt install git -y
 
+# Create projects directory
+mkdir ~/projects
+
 # Add Homebrew to PATH
 set -U fish_user_paths /home/linuxbrew/.linuxbrew/bin $PATH
 
@@ -87,6 +90,14 @@ snap install alacritty --classic
 mkdir -p ~/.config/alacritty
 curl -o "alacritty.yml" https://raw.githubusercontent.com/claudealdric/config/main/alacritty.yml
 mv alacritty.yml ~/.config/alacritty
+
+# Install Obsidian
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v0.12.5/obsidian_0.12.5_amd64.snap
+snap install obsidian*.snap --dangerous
+rm obsidian*.snap
+
+# Clone Obisidan files repository
+git clone https://github.com/claudealdric/mindpalace.git ~/projects/mindpalace
 
 # Add abbreviations
 abbr --add c clear
