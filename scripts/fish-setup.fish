@@ -31,7 +31,7 @@ git config --global core.editor "vim"
 sudo apt install dconf-editor -y
 
 # Install gnome-shell-extension-prefs (for hiding desktop icons)
-sudo apt install gnome-shell-extension-prefs
+sudo apt install gnome-shell-extension-prefs -y
 
 # Set up global git configs
 git config --global user.name "claudealdric"
