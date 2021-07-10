@@ -37,3 +37,8 @@ wget https://github.com/obsidianmd/obsidian-releases/releases/download/v0.12.5/o
 snap install obsidian*.snap --dangerous
 rm obsidian*.snap
 
+# Install dconf-editor (for editing the dock)
+sudo apt install dconf-editor -y
+
+# Install gnome-shell-extension-prefs (for hiding desktop icons)
+sudo apt install gnome-shell-extension-prefs -y
