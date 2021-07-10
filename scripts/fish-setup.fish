@@ -17,6 +17,9 @@ sudo apt install build-essential -y
 # Install Homebrew-recommended software
 brew install gcc
 
+# Install GitHub CLI
+brew install gh
+
 # Install Vim
 if ! command -v vim &> /dev/null
   sudo apt install vim -y
