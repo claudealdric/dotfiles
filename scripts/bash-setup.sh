@@ -24,7 +24,7 @@ if ! command -v fish &> /dev/null
 then
   sudo apt install fish -y
 else
-  sudo add-apt-repository ppa:fish-shell/release-3
+  sudo add-apt-repository ppa:fish-shell/release-3 -y
   sudo apt update
   sudo apt install fish -y
 fi
