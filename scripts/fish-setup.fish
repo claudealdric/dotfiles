@@ -1,7 +1,7 @@
 #!usr/bin/fish
 
 #Upgrade Git to the latest version
-sudo add-apt-repository ppa:git-core/ppa
+sudo add-apt-repository ppa:git-core/ppa -y
 sudo apt update
 sudo apt install git -y
 
@@ -18,7 +18,9 @@ sudo apt install build-essential -y
 brew install gcc
 
 # Install Vim
-sudo apt install vim -y
+if ! command -v vim &> /dev/null
+  sudo apt install vim -y
+end
 
 # Enable clipboard support in Vim
 sudo apt install vim-gtk -y
@@ -26,12 +28,6 @@ sudo apt install vim-gtk -y
 # Set default editor to Vim
 set --global EDITOR /usr/bin/vim
 git config --global core.editor "vim"
-
-# Install dconf-editor (for editing the dock)
-sudo apt install dconf-editor -y
-
-# Install gnome-shell-extension-prefs (for hiding desktop icons)
-sudo apt install gnome-shell-extension-prefs -y
 
 # Set up global git configs
 git config --global user.name "claudealdric"
