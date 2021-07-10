@@ -3,6 +3,14 @@
 # Update system
 sudo apt update && sudo apt upgrade -y
 
+# Install git
+if ! command -v git &> /dev/null
+then
+  sudo apt install git -y
+else
+  echo "git already installed"
+fi
+
 # Install curl
 if ! command -v curl &> /dev/null
 then
