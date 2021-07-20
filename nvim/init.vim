@@ -16,6 +16,7 @@ Plug 'tpope/vim-surround'
 
 if has("nvim")
   Plug 'neovim/nvim-lspconfig'
+  Plug 'glepnir/lspsaga.nvim'
 endif
 
 " List ends here; plugins become visible to Vim after this call
