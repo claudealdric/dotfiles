@@ -36,10 +36,10 @@ nnoremap <leader>/ :set hlsearch!<CR>
 " toggle spell checker
 nnoremap <leader>s :setlocal spell! spelllang=en_us<CR>
 
-" Syntax theme "{{{
-" ---------------------------------------------------------------------
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Syntax theme
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" true color
 if exists("&termguicolors") && exists("&winblend")
   syntax enable
   set termguicolors
@@ -53,4 +53,3 @@ if exists("&termguicolors") && exists("&winblend")
   colorscheme NeoSolarized
 endif
 
-"}}}
