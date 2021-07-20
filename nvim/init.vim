@@ -13,6 +13,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'cohama/lexima.vim'
 Plug 'tpope/vim-surround'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 if has("nvim")
   Plug 'neovim/nvim-lspconfig'
@@ -21,6 +22,13 @@ endif
 
 " List ends here; plugins become visible to Vim after this call
 call plug#end()
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Set up `Prettier` command
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Self configuration
@@ -53,6 +61,7 @@ set spell spelllang=en_us
 " toggle highlight search
 nnoremap <leader>/ :set hlsearch!<CR>
 inoremap wq <ESC>	" remap escape key in insert mode
+nnoremap <leader>f :Prettier<CR>
 
 " toggle spell checker
 nnoremap <leader>s :setlocal spell! spelllang=en_us<CR>
