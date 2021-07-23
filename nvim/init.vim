@@ -18,6 +18,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 if has("nvim")
   Plug 'neovim/nvim-lspconfig'
   Plug 'glepnir/lspsaga.nvim'
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'nvim-lua/completion-nvim.vim'
 endif
 
 " List ends here; plugins become visible to Vim after this call
