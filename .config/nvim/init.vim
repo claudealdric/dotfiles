@@ -115,8 +115,20 @@ nnoremap <leader>/ :set hlsearch!<CR> " toggle highlight search
 nnoremap <leader>f :Prettier<CR> " auto-format with Prettier
 nnoremap <leader>s :w<CR> " save
 nnoremap <leader>x :wq<CR> " save and exit
-nnoremap <leader>v :vsplit<CR> " create a vertical split
-nnoremap <leader>h :split<CR> " create a horizontal split
+
+" Split window
+nnoremap sv :vsplit<CR><C-w>w " create a vertical split
+nnoremap ss :split<CR><C-w>w " create a horizontal split
+
+" Move window
+map sh <C-w>h
+map sj <C-w>j
+map sk <C-w>k
+map sl <C-w>l
+
+" Switch tab
+nnoremap <S-Tab> :tabprev<CR>
+nnoremap <Tab> :tabnext<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntax theme
