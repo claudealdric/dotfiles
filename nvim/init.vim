@@ -52,19 +52,12 @@ set autoindent 		" copy indent from current line when starting new line
 set smartindent 	" do smart autoindenting when starting a new line
 set shell=fish
 
-" Misc
-
-set spell spelllang=en_us
-
 " Personal shortcuts
 
 " toggle highlight search
 nnoremap <leader>/ :set hlsearch!<CR>
 inoremap wq <ESC>	" remap escape key in insert mode
 nnoremap <leader>f :Prettier<CR>
-
-" toggle spell checker
-nnoremap <leader>s :setlocal spell! spelllang=en_us<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntax theme
