@@ -14,6 +14,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'cohama/lexima.vim'
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'kaicataldo/material.vim', {'branch': 'main'}
 
 if has("nvim")
   Plug 'neovim/nvim-lspconfig'
@@ -43,20 +44,20 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Basic
 
-let mapleader = " " " remap the leader to space
+let mapleader = " "       " remap the leader to space
 
-syntax on		      " syntax highlighting
-set hlsearch		  " highlight all search results
-set ignorecase		" do case insensitive search
-set incsearch		  " show incremental search results as you type
-set number relativenumber        " display line number
-set noswapfile		" disable .swp files
-set expandtab		  " replace the tabs with whitespace
-set shiftwidth=2	" number of spaces when indenting
-set tabstop=2 		" number of visual spaces per TAB
-set softtabstop=2 " number of spaces in tab when editing
-set autoindent 		" copy indent from current line when starting new line
-set smartindent 	" do smart autoindenting when starting a new line
+syntax on		              " syntax highlighting
+set hlsearch		          " highlight all search results
+set ignorecase		        " do case insensitive search
+set incsearch		          " show incremental search results as you type
+set number relativenumber " display line number
+set noswapfile		        " disable .swp files
+set expandtab		          " replace the tabs with whitespace
+set shiftwidth=2	        " number of spaces when indenting
+set tabstop=2 		        " number of visual spaces per TAB
+set softtabstop=2         " number of spaces in tab when editing
+set autoindent 		        " copy indent from current line when starting new line
+set smartindent 	        " do smart autoindenting when starting a new line
 set shell=fish
 
 " Personal shortcuts
@@ -78,16 +79,15 @@ nnoremap <leader>h :split<CR> " create a horizontal split
 " Syntax theme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" if exists("&termguicolors") && exists("&winblend")
-"   syntax enable
-"   set termguicolors
-"   set winblend=0
-"   set wildoptions=pum
-"   set pumblend=5
-"   set background=dark
-"   " Use NeoSolarized
-"   let g:neosolarized_termtrans=1
-"   runtime ./colors/NeoSolarized.vim
-"   colorscheme NeoSolarized
-" endif
+if exists("&termguicolors") && exists("&winblend")
+  syntax enable
+  set termguicolors
+  set winblend=0
+  set wildoptions=pum
+  set pumblend=5
+  set background=dark
+  colorscheme material
+  let g:material_terminal_italics = 1
+  let g:material_theme_style = 'darker_community'
+endif
 
