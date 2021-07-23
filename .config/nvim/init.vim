@@ -15,6 +15,7 @@ Plug 'cohama/lexima.vim'
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'kaicataldo/material.vim', {'branch': 'main'}
+Plug 'wakatime/vim-wakatime'
 
 if has("nvim")
   Plug 'neovim/nvim-lspconfig'
@@ -34,9 +35,51 @@ call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Shortcuts
+nmap <F2> <Plug>(coc-rename)
 
 " Set up `Prettier` command
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" COC config
+let g:coc_global_extensions = [
+  \ 'coc-prettier',
+  \ 'coc-eslint',
+  \ 'coc-json',
+  \ 'coc-tsserver',
+\]
+
+" TextEdit might fail if hidden is not set
+set hidden
+
+" Some servers have issues with backup files, see #649
+set nobackup
+set nowritebackup
+
+" Give more space for displaying messages
+set cmdheight=2
+
+" Having longer updatetime (default is 4000ms = 4s) leads to noticeable
+" delays and poor user performance
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|
+set shortmess+=c
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("nvim-0.5.0") || has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
+
+" GoTo code navigation.
+" nmap <silent> gd <Plug>(coc-definition)
+" nmap <silent> gy <Plug>(coc-type-definition)
+" nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gr <Plug>(coc-references)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Self configuration
