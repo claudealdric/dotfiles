@@ -23,6 +23,8 @@ if has("nvim")
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'hoob3rt/lualine.nvim'
 endif
 
 " List ends here; plugins become visible to Vim after this call
