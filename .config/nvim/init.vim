@@ -49,7 +49,7 @@ syntax on		      " syntax highlighting
 set hlsearch		  " highlight all search results
 set ignorecase		" do case insensitive search
 set incsearch		  " show incremental search results as you type
-set number        " display line number
+set number relativenumber        " display line number
 set noswapfile		" disable .swp files
 set expandtab		  " replace the tabs with whitespace
 set shiftwidth=2	" number of spaces when indenting
