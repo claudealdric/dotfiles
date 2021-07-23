@@ -69,6 +69,8 @@ nnoremap <leader>/ :set hlsearch!<CR> " toggle highlight search
 nnoremap <leader>f :Prettier<CR> " auto-format with Prettier
 nnoremap <leader>s :w<CR> " save
 nnoremap <leader>x :wq<CR> " save and exit
+nnoremap <leader>v :vsplit<CR> " create a vertical split
+nnoremap <leader>h :split<CR> " create a horizontal split
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntax theme
