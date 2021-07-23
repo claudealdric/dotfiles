@@ -126,7 +126,8 @@ map sj <C-w>j
 map sk <C-w>k
 map sl <C-w>l
 
-" Switch tab
+" Tabs
+nnoremap st :tabnew<CR>
 nnoremap <S-Tab> :tabprev<CR>
 nnoremap <Tab> :tabnext<CR>
 
