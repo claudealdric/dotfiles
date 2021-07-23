@@ -56,12 +56,18 @@ set shell=fish
 
 " Personal shortcuts
 
-" toggle highlight search
-nnoremap <leader>/ :set hlsearch!<CR>
+" Insert mode
+"
 inoremap wq <ESC>	" remap escape key in insert mode
-nnoremap <leader>f :Prettier<CR>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Normal mode
+"
+nnoremap <leader>/ :set hlsearch!<CR> " toggle highlight search
+nnoremap <leader>f :Prettier<CR> " auto-format with Prettier
+nnoremap <leader>s :w<CR> " save
+nnoremap <leader>x :wq<CR> " save and exit
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntax theme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
