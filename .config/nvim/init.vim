@@ -244,6 +244,7 @@ nnoremap <leader>f :Prettier<CR> " auto-format with Prettier
 nnoremap <leader>s :w<CR> " save
 nnoremap <leader>x :wq<CR> " save and exit
 nnoremap <leader>o :OR<CR> " organize imports
+nnoremap <leader>z :source ~/.config/nvim/init.vim<CR> " refresh nvim config
 
 " Split window
 nnoremap sv :vsplit<CR><C-w>w " create a vertical split
