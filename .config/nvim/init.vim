@@ -11,18 +11,24 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'cohama/lexima.vim'
-Plug 'tpope/vim-surround'
+Plug 'cohama/lexima.vim' " auto-close parentheses
+Plug 'tpope/vim-surround' " easily delete, change, and add surroundings in pairs
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'kaicataldo/material.vim', {'branch': 'main'}
-Plug 'wakatime/vim-wakatime'
+Plug 'kaicataldo/material.vim', {'branch': 'main'} " Material theme
+Plug 'wakatime/vim-wakatime' " time tracker
 
 if has("nvim")
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+  " For fuzzy find functionality
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
-  Plug 'kyazdani42/nvim-web-devicons'
+
+  " lua fork of vim-devicons; add icons to plugins
+  Plug 'kyazdani42/nvim-web-devicons' 
+
+  " Neovim statusline written in pure lua
   Plug 'hoob3rt/lualine.nvim'
 endif
 
@@ -37,6 +43,9 @@ nmap <F2> <Plug>(coc-rename)
 
 " Set up `Prettier` command
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" CoC-related settings
+"--------------------------------------------------------------------------------
 
 " COC config
 let g:coc_global_extensions = [
@@ -248,8 +257,6 @@ map sl <C-w>l
 
 " Tabs
 nnoremap st :tabnew<CR>
-
-" Switch tab
 nnoremap <S-Tab> :tabprev<CR>
 nnoremap <Tab> :tabnext<CR>
 
