@@ -18,8 +18,6 @@ Plug 'kaicataldo/material.vim', {'branch': 'main'}
 Plug 'wakatime/vim-wakatime'
 
 if has("nvim")
-  Plug 'neovim/nvim-lspconfig'
-  Plug 'glepnir/lspsaga.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-lua/completion-nvim'
   Plug 'nvim-lua/popup.nvim'
