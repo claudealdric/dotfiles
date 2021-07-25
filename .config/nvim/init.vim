@@ -207,7 +207,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " Basic
 
-let mapleader = " "       " remap the leader to space
+let mapleader = "t"       " remap the leader to 't'
 
 syntax on		              " syntax highlighting
 set hlsearch		          " highlight all search results
