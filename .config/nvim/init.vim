@@ -247,12 +247,10 @@ map sj <C-w>j
 map sk <C-w>k
 map sl <C-w>l
 
-<<<<<<< HEAD
 " Tabs
 nnoremap st :tabnew<CR>
-=======
+
 " Switch tab
->>>>>>> 54e75a7 (Update window management settings)
 nnoremap <S-Tab> :tabprev<CR>
 nnoremap <Tab> :tabnext<CR>
 
