@@ -28,8 +28,10 @@ if has("nvim")
   " lua fork of vim-devicons; add icons to plugins
   Plug 'kyazdani42/nvim-web-devicons' 
 
-  " Neovim statusline written in pure lua
-  Plug 'hoob3rt/lualine.nvim'
+  " Status lines
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'edkolev/tmuxline.vim'
 endif
 
 " List ends here; plugins become visible to Vim after this call
@@ -43,6 +45,14 @@ nmap <F2> <Plug>(coc-rename)
 
 " Set up `Prettier` command
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'material'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline_detect_spell=0
+let g:airline_detect_spelllang = 0
+let g:airline_stl_path_style = 'short'
 
 " CoC-related settings
 "--------------------------------------------------------------------------------
