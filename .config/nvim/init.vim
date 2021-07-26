@@ -32,6 +32,8 @@ if has("nvim")
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'edkolev/tmuxline.vim'
+
+   Plug 'ggandor/lightspeed.nvim'
 endif
 
 " List ends here; plugins become visible to Vim after this call
@@ -250,24 +252,22 @@ inoremap wq <ESC>	" remap escape key in insert mode
 " Normal mode
 "
 nnoremap <leader>/ :set hlsearch!<CR> " toggle highlight search
-nnoremap <leader>f :Prettier<CR> " auto-format with Prettier
-nnoremap <leader>s :w<CR> " save
-nnoremap <leader>x :wq<CR> " save and exit
+nnoremap <leader>; :Prettier<CR> " auto-format with Prettier
 nnoremap <leader>o :OR<CR> " organize imports
 nnoremap <leader>z :source ~/.config/nvim/init.vim<CR> " refresh nvim config
 
 " Split window
-nnoremap sv :vsplit<CR><C-w>w " create a vertical split
-nnoremap ss :split<CR><C-w>w " create a horizontal split
+nnoremap <leader>v :vsplit<CR><C-w>w " create a vertical split
+nnoremap <leader>s :split<CR><C-w>w " create a horizontal split
 
 " Move window
-map sh <C-w>h
-map sj <C-w>j
-map sk <C-w>k
-map sl <C-w>l
+map <leader>h <C-w>h
+map <leader>j <C-w>j
+map <leader>k <C-w>k
+map <leader>l <C-w>l
 
 " Tabs
-nnoremap st :tabnew<CR>
+nnoremap <leader>t :tabnew<CR>
 nnoremap <S-Tab> :tabprev<CR>
 nnoremap <Tab> :tabnext<CR>
 
