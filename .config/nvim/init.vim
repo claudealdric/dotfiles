@@ -250,14 +250,11 @@ set shell=fish
 inoremap wq <ESC>	" remap escape key in insert mode
 
 " Normal mode
-
+"
 nnoremap <leader>/ :set hlsearch!<CR> " toggle highlight search
 nnoremap <leader>; :Prettier<CR> " auto-format with Prettier
 nnoremap <leader>o :OR<CR> " organize imports
 nnoremap <leader>z :source ~/.config/nvim/init.vim<CR> " refresh nvim config
-
-" Terminal mode
-tnoremap <Esc> <C-\><C-n>
 
 " Split window
 nnoremap <leader>v :vsplit<CR><C-w>w " create a vertical split
