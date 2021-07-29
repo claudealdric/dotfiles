@@ -1,13 +1,5 @@
 #!usr/bin/fish
 
-#Upgrade Git to the latest version
-sudo add-apt-repository ppa:git-core/ppa -y
-sudo apt update
-sudo apt install git -y
-
-# Create projects directory
-mkdir ~/projects
-
 # Add Homebrew to PATH
 set -U fish_user_paths /home/linuxbrew/.linuxbrew/bin $PATH
 
@@ -20,22 +12,8 @@ brew install gcc
 # Install GitHub CLI
 brew install gh
 
-# Install Neovim
-# Get build prerequisites
-sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl
-git clone https://github.com/neovim/neovim
-cd neovim
-make -j4
-sudo make install
-rm -rf neovim
-
 # Set default editor to Neovim
 set --global EDITOR /usr/local/bin/nvim
-git config --global core.editor "nvim"
-
-# Set up global git configs
-git config --global user.name "claudealdric"
-git config --global user.email "cvaldric@gmail.com"
 
 # Install Fisher
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
@@ -67,5 +45,14 @@ echo "powerline-setup" >> ~/.config/fish/config.fish
 
 # Add abbreviations
 abbr --add c clear
-abbr --add gac "git add --all && git commit -S"
+abbr --add gac "git add --all && git commit"
+abbr --add gacs "git add --all && git commit -S"
+abbr --add glgo "git log --oneline"
+abbr --add t1 "~/dotfiles/scripts/term1"
+abbr --add t2 "~/dotfiles/scripts/term2"
+abbr --add t3 "~/dotfiles/scripts/term3"
+abbr --add t4 "~/dotfiles/scripts/term4"
+abbr --add tmat "tmux a -t"
+abbr --add tkser "tmux kill-server"
+abbr --add tkses "tmux kill-session"
 
