@@ -20,17 +20,18 @@ brew install gcc
 # Install GitHub CLI
 brew install gh
 
-# Install Vim
-if ! command -v vim &> /dev/null
-  sudo apt install vim -y
-end
+# Install Neovim
+# Get build prerequisites
+sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl
+git clone https://github.com/neovim/neovim
+cd neovim
+make -j4
+sudo make install
+rm -rf neovim
 
-# Enable clipboard support in Vim
-sudo apt install vim-gtk -y
-
-# Set default editor to Vim
-set --global EDITOR /usr/bin/vim
-git config --global core.editor "vim"
+# Set default editor to Neovim
+set --global EDITOR /usr/local/bin/nvim
+git config --global core.editor "nvim"
 
 # Set up global git configs
 git config --global user.name "claudealdric"
