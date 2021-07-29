@@ -60,6 +60,7 @@ let g:coc_global_extensions = [
   \ 'coc-tabnine',
   \ 'coc-html',
   \ 'coc-emmet',
+  \ 'coc-angular',
 \]
 
 " TextEdit might fail if hidden is not set
