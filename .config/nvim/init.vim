@@ -16,6 +16,7 @@ Plug 'tpope/vim-surround' " easily delete, change, and add surroundings in pairs
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'kaicataldo/material.vim', {'branch': 'main'} " Material theme
 Plug 'wakatime/vim-wakatime' " time tracker
+Plug 'mattn/emmet-vim' 
 
 if has("nvim")
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -58,6 +59,7 @@ let g:coc_global_extensions = [
   \ 'coc-spell-checker',
   \ 'coc-tabnine',
   \ 'coc-html',
+  \ 'coc-emmet',
 \]
 
 " TextEdit might fail if hidden is not set
