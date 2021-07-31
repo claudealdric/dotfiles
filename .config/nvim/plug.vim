@@ -23,9 +23,10 @@ if has("nvim")
   " lua fork of vim-devicons; add icons to plugins
   Plug 'kyazdani42/nvim-web-devicons' 
 
-  " Neovim statusline written in pure lua
+  " Neovim statusline written in pure Lua
   Plug 'hoob3rt/lualine.nvim'
 
+  " On-screen navigation
   Plug 'ggandor/lightspeed.nvim'
 endif
 
