@@ -28,6 +28,9 @@ if has("nvim")
 
   " On-screen navigation
   Plug 'ggandor/lightspeed.nvim'
+
+  " Darken inactive panes
+  Plug 'sunjon/shade.nvim'
 endif
 
 " List ends here; plugins become visible to Vim after this call
