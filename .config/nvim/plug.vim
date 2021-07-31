@@ -31,7 +31,12 @@ if has("nvim")
 
   " Darken inactive panes
   Plug 'sunjon/shade.nvim'
+
+  " Indent markers
+  Plug 'lukas-reineke/indent-blankline.nvim'
 endif
 
 " List ends here; plugins become visible to Vim after this call
 call plug#end()
+
+let g:indent_blankline_enabled = v:false
