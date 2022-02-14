@@ -29,9 +29,6 @@ if has("nvim")
   " On-screen navigation
   Plug 'ggandor/lightspeed.nvim'
 
-  " Darken inactive panes
-  Plug 'sunjon/shade.nvim'
-
   " Indent markers
   Plug 'lukas-reineke/indent-blankline.nvim'
 endif
