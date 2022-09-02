@@ -1,7 +1,7 @@
 " COC config
 "____________________________________________________________
 
-let g:coc_node_path = '/home/claude/.local/share/nvm/v16.13.1/bin/node'
+let g:coc_node_path = '~/.volta/bin/node'
 
 let g:coc_global_extensions = [
   \ 'coc-prettier',
