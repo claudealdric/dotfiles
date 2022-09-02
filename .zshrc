@@ -109,14 +109,30 @@ source $ZSH/oh-my-zsh.sh
 # NVM Export
 export EDITOR="nvim"
 export GPG_TTY=$(tty)
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Aliases
+alias "gp!"="git push --force-with-lease"
 alias c="clear"
+alias ds="docker stop $(docker container ls -q)"
 alias gac="git add --all && git commit -S"
 alias gc="git commit -S"
+alias gc="git commit -S"
+alias gdhh="git diff HEAD^ HEAD"
+alias glgo="git log --oneline"
+alias nvz="nvim ~/.zshrc"
 alias sz="source ~/.zshrc"
+alias t1="~/dotfiles/scripts/term1"
+alias t2="~/dotfiles/scripts/term2"
+alias t3="~/dotfiles/scripts/term3"
+alias t4="~/dotfiles/scripts/term4"
+alias tkser="tmux kill-server"
 alias y="yarn"
+alias yb="yarn build"
+alias ybs="yarn build && yarn start"
 alias ys="yarn start"
+alias yt="yarn test"
 
 # Path variable
 export PATH
