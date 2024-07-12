@@ -1,7 +1,4 @@
 -- inspiration: https://www.youtube.com/watch?v=6pAG3BHurdM
-vim.g.netrw_liststyle = 3
-vim.g.netrw_banner = 0 -- remove the informational first few lines
-
 local opt = vim.opt
 
 -- basic options
@@ -27,3 +24,7 @@ opt.signcolumn = "yes" -- always show signcolumn so that text doesn't shift
 -- splits
 opt.splitright = true -- when the window splits vertically, go to the one on the right
 opt.splitbelow = true -- when the window splits horizontally, go to the one below
+
+-- aesthetics
+vim.g.netrw_liststyle = 3 -- tree style listing
+vim.g.netrw_banner = 0 -- remove the informational first few lines
