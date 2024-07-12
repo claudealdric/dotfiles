@@ -41,14 +41,6 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 
-# Functions
-
-# automatically input "ls -al" after each "cd"
-cd() {
-	builtin cd "$@" && ls -al
-}
-
-
 # Aliases
 
 alias ls='ls --color' # must come before any other ls commands
@@ -57,12 +49,20 @@ alias 'gp!'='git push --force-with-lease'
 alias c='clear'
 alias gac='git add --all && git commit'
 alias glgo='git log --oneline'
-alias l='ls -al'
+alias l='ls -alh'
 alias ng='nvim ~/.gitconfig'
 alias ni='nvim ~/.zshrc'
 alias nv='nvim ~/.zshrc'
 alias nz='nvim ~/.zshrc'
 alias sz='source ~/.zshrc'
+
+
+# Functions
+
+# automatically input "ls -al" after each "cd"
+cd() {
+	builtin cd "$@" && ls -al
+}
 
 
 # Plugins
