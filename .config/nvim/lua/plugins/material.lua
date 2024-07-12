@@ -1,8 +1,8 @@
 return {
 	"marko-cerovac/material.nvim",
 	branch = "main",
-	lazy = false, -- make sure we load this during startup
-	priority = 1000, -- make sure we load this before all others
+	lazy = false,
+	priority = 500,
 	config = function()
 		vim.g.material_style = "oceanic"
 		vim.cmd("colorscheme material")
