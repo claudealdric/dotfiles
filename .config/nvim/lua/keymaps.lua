@@ -55,3 +55,7 @@ keymap.set("n", "<leader>m", "<CMD>Telescope keymaps<CR>", {
 	desc = "Lists normal mode keymappings",
 	noremap = true,
 })
+keymap.set("n", "<leader>gc", "<CMD>Telescope git_bcommits<CR>", {
+	desc = "Lists commits for current buffer with diff preview",
+	noremap = true,
+})
