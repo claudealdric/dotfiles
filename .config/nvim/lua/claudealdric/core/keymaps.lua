@@ -84,6 +84,10 @@ keymap.set("n", "<leader>gs", "<CMD>Telescope grep_string<CR>", {
 	desc = "Searches for the string under your cursor or selection in your current working directory",
 	noremap = true,
 })
+keymap.set("n", "<leader>gb", "<CMD>Telescope current_buffer_fuzzy_find<CR>", {
+	desc = "Fuzzy find in buffer",
+	noremap = true,
+})
 keymap.set("n", "<leader>ch", "<CMD>Telescope command_history<CR>", {
 	desc = "Lists commands that were executed recently",
 	noremap = true,
