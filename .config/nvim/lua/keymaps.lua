@@ -7,6 +7,7 @@ keymap.set("i", "wq", "<ESC>", { desc = "Exit Insert Mode with 'wq'", noremap = 
 
 -- normal mode
 keymap.set("n", "<leader>/", "<CMD>set hlsearch!<CR>", { desc = "Toggle highlight search", noremap = true })
+keymap.set("n", "<leader><F2>", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- visual mode
 -- "greatest remap ever" —Primeagen
