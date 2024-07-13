@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = claudealdric
+	email = cvaldric@gmail.com
+	signingkey = 7EF087AFFB454BA1
+[core]
+	editor = nvim
+	pager = less -x1,5
+[commit]
+	gpgSign = true
+[gpg]
+	program = gpg
+[tag]
+	gpgSign = true
