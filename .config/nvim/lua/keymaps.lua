@@ -34,7 +34,7 @@ keymap.set("n", "<leader>f", "<CMD>Telescope find_files<CR>", {
 	desc = "Find files, fuzzy finder-style",
 	noremap = true,
 })
-keymap.set("n", "<leader>gl", "<CMD>Telescope live_grep<CR>", {
+keymap.set("n", "<leader>gf", "<CMD>Telescope live_grep<CR>", {
 	desc = "Perform grep on the files in the current working directory",
 	noremap = true,
 })
