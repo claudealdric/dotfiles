@@ -59,3 +59,9 @@ keymap.set("n", "<leader>gc", "<CMD>Telescope git_bcommits<CR>", {
 	desc = "Lists commits for current buffer with diff preview",
 	noremap = true,
 })
+
+-- Undotree
+keymap.set("n", "<leader>u", "<CMD>UndotreeToggle<CR>", {
+	desc = "Visualize the undo history",
+	noremap = true,
+})
