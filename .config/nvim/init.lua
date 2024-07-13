@@ -1,3 +1,2 @@
-require("basics")
-require("keymaps")
+require("claudealdric.core")
 require("config.lazy")
