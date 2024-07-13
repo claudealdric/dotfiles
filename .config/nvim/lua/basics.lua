@@ -6,6 +6,7 @@ opt.relativenumber = true -- relative line numbers
 opt.number = true -- absolute line number for current line
 opt.wrap = false -- disable line wrapping
 opt.swapfile = false
+opt.undofile = true
 
 -- tabs & indentation
 opt.tabstop = 4
