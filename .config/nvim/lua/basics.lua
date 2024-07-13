@@ -7,6 +7,7 @@ opt.number = true -- absolute line number for current line
 opt.wrap = false -- disable line wrapping
 opt.swapfile = false
 opt.undofile = true
+opt.colorcolumn = "80"
 
 -- tabs & indentation
 opt.tabstop = 4
