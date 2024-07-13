@@ -11,6 +11,8 @@ keymap.set("n", "<leader>/", "<CMD>set hlsearch!<CR>", { desc = "Toggle highligh
 -- visual mode
 -- "greatest remap ever" —Primeagen
 keymap.set("x", "<leader>p", '"_dP') -- deleted words do not override default register
+keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- you can drag highlighted sections
+keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- you can drag highlighted sections
 
 -- splits
 keymap.set("n", "<leader>v", "<CMD>vsplit<CR>", { desc = "Create a vertical split", noremap = true })
