@@ -5,6 +5,7 @@ local opt = vim.opt
 opt.relativenumber = true -- relative line numbers
 opt.number = true -- absolute line number for current line
 opt.wrap = false -- disable line wrapping
+opt.swapfile = false
 
 -- tabs & indentation
 opt.tabstop = 4
