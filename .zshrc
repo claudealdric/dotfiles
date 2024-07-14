@@ -61,7 +61,12 @@ alias ni='nvim ~/.zshrc'
 alias nv='nvim ~/.zshrc'
 alias nz='nvim ~/.zshrc'
 alias sz='source ~/.zshrc'
-
+alias t1="~/dotfiles/scripts/term1"
+alias t2="~/dotfiles/scripts/term2"
+alias t3="~/dotfiles/scripts/term3"
+alias t4="~/dotfiles/scripts/term4"
+alias tkser="tmux kill-server"
+alias tmat="tmux a -t"
 
 # Functions
 
