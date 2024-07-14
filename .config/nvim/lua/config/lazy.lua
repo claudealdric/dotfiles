@@ -27,6 +27,7 @@ require("lazy").setup({
 	spec = {
 		-- import your plugins
 		{ import = "claudealdric.plugins" },
+		{ import = "claudealdric.plugins.lsp" },
 	},
 	-- automatically check for plugin updates
 	checker = { enabled = true },
