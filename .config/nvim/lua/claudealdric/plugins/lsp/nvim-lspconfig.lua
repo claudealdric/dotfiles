@@ -69,8 +69,8 @@ return {
 					on_attach = default_on_attach,
 				})
 			end,
-			["lua_ls"] = function()
-				lspconfig["lua_ls"].setup({
+			["lua_ls"] = function(server_name)
+				lspconfig[server_name].setup({
 					on_init = function(client)
 						local path = client.workspace_folders[1].name
 						if vim.loop.fs_stat(path .. "/.luarc.json") or vim.loop.fs_stat(path .. "/.luarc.jsonc") then
