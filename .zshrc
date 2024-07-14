@@ -1,5 +1,11 @@
 # Setup inspiration: https://www.youtube.com/watch?v=ud7YxC33Z3w
 
+# Exports
+export GPG_TTY=$(tty)
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+
 # Set up plugin manager (zinit)
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -120,9 +126,3 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Add your SSH key to the agent
 ssh-add -l > /dev/null || ssh-add ~/.ssh/id_ed25519
-
-
-# Exports
-export GPG_TTY=$(tty)
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
