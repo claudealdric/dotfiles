@@ -16,7 +16,8 @@ keymap.set("n", "<leader>/", "<CMD>set hlsearch!<CR>", {
 keymap.set(
 	"n",
 	"<leader><F2>",
-	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]
+	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+	{ desc = "Substitute the current term under the cursor", noremap = true }
 )
 
 -- visual mode
