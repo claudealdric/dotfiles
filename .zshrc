@@ -49,7 +49,7 @@ setopt hist_find_no_dups
 
 # Aliases
 
-alias ls='ls --color' # must come before any other ls commands
+alias ls='ls --color' #! must come before any other ls commands
 alias '..'='cd ..'
 alias 'gp!'='git push --force-with-lease'
 alias c='clear'
@@ -85,7 +85,7 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # Oh My Zsh git plugin
 zinit snippet OMZP::git
-#
+
 # Oh My Zsh autojump plugin
 zinit snippet OMZP::autojump
 
