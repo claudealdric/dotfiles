@@ -32,6 +32,9 @@ bindkey -M vicmd 'k' history-search-backward
 bindkey -M vicmd 'j' history-search-forward
 
 
+setopt IGNOREEOF # accidentally pressing Ctrl + d keeps closing the zsh session
+
+
 # History
 HISTSIZE=5000 # size of the history
 HISTFILE=~/.zsh_history # path where history will be stored
