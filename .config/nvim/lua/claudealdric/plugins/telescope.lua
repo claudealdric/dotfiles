@@ -34,6 +34,8 @@ return {
 						"--glob",
 						ignore_git_blob,
 					},
+					-- Enable following symlinks
+					follow = true,
 				},
 			},
 		})
