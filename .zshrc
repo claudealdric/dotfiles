@@ -1,6 +1,7 @@
 # Setup inspiration: https://www.youtube.com/watch?v=ud7YxC33Z3w
 
 # Exports
+export EDITOR="nvim"
 export GPG_TTY=$(tty)
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
