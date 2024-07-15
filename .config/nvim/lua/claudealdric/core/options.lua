@@ -8,7 +8,7 @@ opt.wrap = false -- disable line wrapping
 opt.swapfile = false
 opt.undofile = true
 opt.colorcolumn = "80"
-opt.iskeyword:remove {"_"} -- delete words between "_"
+opt.iskeyword:remove({ "_" }) -- delete words between "_"
 
 -- tabs & indentation
 opt.tabstop = 4
