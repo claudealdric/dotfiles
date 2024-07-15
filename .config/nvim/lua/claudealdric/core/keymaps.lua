@@ -9,7 +9,7 @@ keymap.set("i", "wq", "<ESC>", {
 })
 
 -- normal mode
-keymap.set("n", "<leader>/", "<CMD>set hlsearch!<CR>", {
+keymap.set("n", "<leader>/", "<cmd>set hlsearch!<cr>", {
 	desc = "Toggle highlight search",
 	noremap = true,
 })
@@ -26,21 +26,21 @@ keymap.set("x", "<leader>p", '"_dP', {
 	desc = "Deleted words do not override default register",
 	noremap = true,
 })
-keymap.set("v", "J", ":m '>+1<CR>gv=gv", {
+keymap.set("v", "J", ":m '>+1<cr>gv=gv", {
 	desc = "Highlighted sections can be dragged downwards",
 	noremap = true,
 })
-keymap.set("v", "K", ":m '<-2<CR>gv=gv", {
+keymap.set("v", "K", ":m '<-2<cr>gv=gv", {
 	desc = "Highlighted sections can be dragged upwards",
 	noremap = true,
 })
 
 -- splits
-keymap.set("n", "<leader>v", "<CMD>vsplit<CR>", {
+keymap.set("n", "<leader>v", "<cmd>vsplit<cr>", {
 	desc = "Create a vertical split",
 	noremap = true,
 })
-keymap.set("n", "<leader>s", "<CMD>split<CR>", {
+keymap.set("n", "<leader>s", "<cmd>split<cr>", {
 	desc = "Create a horizontal split",
 	noremap = true,
 })
@@ -50,21 +50,21 @@ keymap.set("n", "<leader>k", "<C-w>k", { desc = "Move to the top split" })
 keymap.set("n", "<leader>l", "<C-w>l", { desc = "Move to the right split" })
 
 -- tabs
-keymap.set("n", "<leader>n", "<CMD>tabnew %<CR>", {
+keymap.set("n", "<leader>n", "<cmd>tabnew %<cr>", {
 	desc = "Create a new tab",
 	noremap = true,
 })
-keymap.set("n", "<S-Tab>", "<CMD>tabprev<CR>", {
+keymap.set("n", "<S-Tab>", "<cmd>tabprev<cr>", {
 	desc = "Move to the previous tab",
 	noremap = true,
 })
-keymap.set("n", "<Tab>", "<CMD>tabnext<CR>", {
+keymap.set("n", "<Tab>", "<cmd>tabnext<cr>", {
 	desc = "Move to the next tab",
 	noremap = true,
 })
 
 -- Undotree
-keymap.set("n", "<leader>u", "<CMD>UndotreeToggle<CR>", {
+keymap.set("n", "<leader>u", "<cmd>UndotreeToggle<cr>", {
 	desc = "Visualize the undo history",
 	noremap = true,
 })
