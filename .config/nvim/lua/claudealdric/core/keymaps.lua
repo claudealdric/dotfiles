@@ -63,45 +63,6 @@ keymap.set("n", "<Tab>", "<CMD>tabnext<CR>", {
 	noremap = true,
 })
 
--- Telescope
--- Helpful mappings: https://github.com/nvim-telescope/telescope.nvim?tab=readme-ov-file#default-mappings
-keymap.set("n", "<leader>f", "<CMD>Telescope find_files<CR>", {
-	desc = "Find files, fuzzy finder-style",
-	noremap = true,
-})
-keymap.set("n", "<leader>gf", "<CMD>Telescope live_grep<CR>", {
-	desc = "Perform grep on the files in the current working directory",
-	noremap = true,
-})
-keymap.set("n", "<leader>b", "<CMD>Telescope buffers<CR>", {
-	desc = "Find buffers, fuzzy finder-style",
-	noremap = true,
-})
-keymap.set("n", "<leader>th", "<CMD>Telescope help_tags<CR>", {
-	desc = "Lists available help tags",
-	noremap = true,
-})
-keymap.set("n", "<leader>gs", "<CMD>Telescope grep_string<CR>", {
-	desc = "Searches for the string under your cursor or selection in your current working directory",
-	noremap = true,
-})
-keymap.set("n", "<leader>gb", "<CMD>Telescope current_buffer_fuzzy_find<CR>", {
-	desc = "Fuzzy find in buffer",
-	noremap = true,
-})
-keymap.set("n", "<leader>ch", "<CMD>Telescope command_history<CR>", {
-	desc = "Lists commands that were executed recently",
-	noremap = true,
-})
-keymap.set("n", "<leader>m", "<CMD>Telescope keymaps<CR>", {
-	desc = "Lists normal mode keymappings",
-	noremap = true,
-})
-keymap.set("n", "<leader>gc", "<CMD>Telescope git_bcommits<CR>", {
-	desc = "Lists commits for current buffer with diff preview",
-	noremap = true,
-})
-
 -- Undotree
 keymap.set("n", "<leader>u", "<CMD>UndotreeToggle<CR>", {
 	desc = "Visualize the undo history",
