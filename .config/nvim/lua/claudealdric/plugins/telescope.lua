@@ -5,6 +5,7 @@ return {
 		"nvim-lua/plenary.nvim",
 		-- to improve the performance of telescope
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+		"folke/todo-comments.nvim",
 	},
 	config = function()
 		require("telescope").load_extension("fzf")
@@ -50,6 +51,10 @@ return {
 		})
 		keymap.set("n", "<leader>gc", "<cmd>Telescope git_bcommits<cr>", {
 			desc = "Lists commits for current buffer with diff preview",
+			noremap = true,
+		})
+		keymap.set("n", "<leader>tt", "<cmd>TodoTelescope<cr>", {
+			desc = "Find all to-do's",
 			noremap = true,
 		})
 	end,
