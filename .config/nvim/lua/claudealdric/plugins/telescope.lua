@@ -13,11 +13,11 @@ return {
 		local ignore_git_blob = "!**/.git/*"
 		local vimgrep_arguments =
 			{ unpack(require("telescope.config").values.vimgrep_arguments) }
-		-- I want to search symlinked files.
+		-- Search symlinked files
 		table.insert(vimgrep_arguments, "--follow")
-		-- I want to search in hidden/dot files.
+		-- Search in hidden/dot files
 		table.insert(vimgrep_arguments, "--hidden")
-		-- I don't want to search in the `.git` directory.
+		-- Don't search in the `.git` directory
 		table.insert(vimgrep_arguments, "--glob")
 		table.insert(vimgrep_arguments, ignore_git_blob)
 
