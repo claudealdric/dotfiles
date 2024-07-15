@@ -3,6 +3,7 @@ return {
 	enabled = true,
 	event = "VeryLazy",
 	opts = {
+		preset = "helix",
 		plugins = {
 			operators = false,
 		},
