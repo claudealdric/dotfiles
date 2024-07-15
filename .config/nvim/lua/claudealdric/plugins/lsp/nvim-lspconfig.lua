@@ -28,7 +28,12 @@ return {
 			keymap.set("n", "<F2>", buf.rename, opts)
 
 			opts.desc = "Show buffer diagnostics"
-			keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<cr>", opts)
+			keymap.set(
+				"n",
+				"<leader>D",
+				"<cmd>Telescope diagnostics bufnr=0<cr>",
+				opts
+			)
 
 			opts.desc = "Show line diagnostics"
 			keymap.set("n", "<leader>d", diagnostic.open_float, opts)
