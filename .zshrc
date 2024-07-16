@@ -64,6 +64,7 @@ alias ng='nvim ~/.gitconfig'
 alias ni='nvim ~/.zshrc'
 alias nv='nvim'
 alias nz='nvim ~/.zshrc'
+alias sd='cd ~/dotfiles && stow --adopt --restow . && cd -'
 alias sz='source ~/.zshrc'
 alias t1="~/dotfiles/scripts/term1"
 alias t2="~/dotfiles/scripts/term2"
