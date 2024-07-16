@@ -55,6 +55,9 @@ setopt hist_find_no_dups
 
 alias ls='ls --color' #! must come before any other ls commands
 alias '..'='cd ..'
+alias '...'='cd ../..'
+alias '....'='cd ../../..'
+alias '.....'='cd ../../../..'
 alias 'gp!'='git push --force-with-lease'
 alias c='clear'
 alias gac='git add --all && git commit'
