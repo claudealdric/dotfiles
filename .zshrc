@@ -102,6 +102,9 @@ zinit light zsh-users/zsh-completions
 # Zsh autosuggestions
 zinit light zsh-users/zsh-autosuggestions
 
+# Auto expand abbreviations
+zinit light olets/zsh-abbr
+
 # Replace zsh's default completion selection menu with fzf
 zinit light Aloxaf/fzf-tab
 
