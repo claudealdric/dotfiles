@@ -50,22 +50,22 @@ setopt hist_find_no_dups
 # ------------------------------------------------------------------------------
 # Aliases
 # ------------------------------------------------------------------------------
-alias ls='ls --color' #! must come before any other ls commands
-alias '..'='cd ..'
-alias '...'='cd ../..'
-alias '....'='cd ../../..'
-alias '.....'='cd ../../../..'
-alias 'gp!'='git push --force-with-lease'
-alias c='clear'
-alias gac='git add --all && git commit'
-alias glgo='git log --oneline'
-alias l='ls -alh'
-alias ng='nvim ~/.gitconfig'
-alias ni='nvim ~/.zshrc'
-alias nv='nvim'
-alias nz='nvim ~/.zshrc'
-alias sd='cd ~/dotfiles && stow --adopt --restow . && cd -'
-alias sz='source ~/.zshrc'
+alias ls="ls --color" #! must come before any other ls commands
+alias ".."="cd .."
+alias "..."="cd ../.."
+alias "...."="cd ../../.."
+alias "....."="cd ../../../.."
+alias "gp!"="git push --force-with-lease"
+alias c="clear"
+alias gac="git add --all && git commit"
+alias glgo="git log --oneline"
+alias l="ls -alh"
+alias ng="nvim ~/.gitconfig"
+alias ni="nvim ~/.zshrc"
+alias nv="nvim"
+alias nz="nvim ~/.zshrc"
+alias sd="cd ~/dotfiles && stow --adopt --restow . && cd -"
+alias sz="source ~/.zshrc"
 alias t1="~/dotfiles/scripts/term1"
 alias t2="~/dotfiles/scripts/term2"
 alias t3="~/dotfiles/scripts/term3"
