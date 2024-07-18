@@ -22,6 +22,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.keymap.set("n", "<leader>L", "<cmd>Lazy<cr>", { desc = "Open Lazy UI" })
+
 -- Setup lazy.nvim
 require("lazy").setup({
 	spec = {
