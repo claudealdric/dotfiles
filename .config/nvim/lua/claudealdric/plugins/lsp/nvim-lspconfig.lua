@@ -14,6 +14,11 @@ local get_lsp_setup_overrides = function(lspconfig)
 				},
 			})
 		end,
+		harper_ls = function(server_name)
+			lspconfig[server_name].setup({
+				filetypes = { "markdown" },
+			})
+		end,
 	}
 end
 
