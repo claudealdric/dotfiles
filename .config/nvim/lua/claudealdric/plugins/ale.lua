@@ -4,8 +4,6 @@ return {
 	config = function()
 		local g = vim.g
 
-		g.ale_linters = {
-			["*"] = { "cspell" },
-		}
+		g.ale_linters = {}
 	end,
 }
