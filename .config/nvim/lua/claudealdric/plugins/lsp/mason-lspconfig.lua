@@ -19,6 +19,7 @@ return {
 			"html",
 			"jsonls",
 			"lua_ls",
+			"markdown_oxide",
 			"pyright",
 			"sqls",
 			"tsserver",
