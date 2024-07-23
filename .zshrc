@@ -8,7 +8,7 @@ setopt IGNOREEOF # accidentally pressing Ctrl + d keeps closing the zsh session
 if [ -d ".ssh" ]; then
 	ssh-add -l > /dev/null || ssh-add ~/.ssh/id_ed25519 # add ssh key to agent
 fi
-eval "$(/opt/homebrew/bin/brew shellenv)" # set up homebrew
+eval "$($(which brew) shellenv)" # set up homebrew
 
 # ------------------------------------------------------------------------------
 # Exports
