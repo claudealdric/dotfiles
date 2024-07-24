@@ -1,10 +1,9 @@
 return {
 	"rcarriga/nvim-dap-ui",
 	dependencies = {
-		"mfussenegger/nvim-dap",
 		"nvim-neotest/nvim-nio",
 	},
-	event = { "BufReadPost" },
+	lazy = true,
 	config = function()
 		local dap = require("dap")
 		local dapui = require("dapui")

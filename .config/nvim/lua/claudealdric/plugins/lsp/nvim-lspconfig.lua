@@ -66,7 +66,7 @@ end
 
 return {
 	"neovim/nvim-lspconfig",
-	event = { "BufRead" },
+	event = { "BufReadPost", "BufNewFile" },
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		{ "antosha417/nvim-lsp-file-operations", config = true },

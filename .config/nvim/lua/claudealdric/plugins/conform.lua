@@ -1,6 +1,16 @@
 return {
 	"stevearc/conform.nvim",
-	event = { "BufRead" },
+	event = { "BufWrite" },
+	keys = {
+		{
+			"<leader>;",
+			function()
+				require("conform").format()
+			end,
+			{ "n", "v" },
+			desc = "Format file (or range in visual mode)",
+		},
+	},
 	config = function()
 		local conform = require("conform")
 

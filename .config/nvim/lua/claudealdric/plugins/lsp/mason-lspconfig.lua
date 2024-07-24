@@ -4,7 +4,7 @@ return {
 		"neovim/nvim-lspconfig",
 		"williamboman/mason.nvim",
 	},
-	event = { "BufRead" },
+	event = { "BufReadPost", "BufNewFile" },
 	opts = {
 		ensure_installed = {
 			"bashls",
