@@ -103,5 +103,10 @@ return {
 			end,
 			desc = "Debug: show locals/scope, locals",
 		},
+		{
+			"<leader>dt",
+			"<cmd>DapTerminate<cr>",
+			desc = "Debug: terminate",
+		},
 	},
 }
