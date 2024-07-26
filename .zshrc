@@ -119,7 +119,7 @@ install_plugins() {
 	zinit light olets/zsh-abbr # auto expand abbreviations
 	zinit ice depth=1; zinit light romkatv/powerlevel10k
 	[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-	zinit light Aloxaf/fzf-tab # replace zsh's completion selection menu with fzf
+	# zinit light Aloxaf/fzf-tab # replace zsh's completion selection menu with fzf
 }
 
 set_up_completion() {
@@ -139,7 +139,8 @@ set_up_completion() {
 	# Shell integrations
 	eval "$(fzf --zsh)"
 	# Load completions
-	autoload -U compinit && compinit
+	autoload -U compinit; compinit
+	source ~/fzf-tab/fzf-tab.plugin.zsh
 	zinit cdreplay -q
 }
 
