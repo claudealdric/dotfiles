@@ -3,7 +3,7 @@
 # Please adapt and uncomment the following lines:
 	name = claudealdric
 	email = cvaldric@gmail.com
-	signingkey = 7EF087AFFB454BA1
+	signingkey = 9D7BF5E8B7099AB6
 [core]
 	editor = nvim
 	pager = less -x1,5
