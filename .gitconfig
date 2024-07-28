@@ -13,3 +13,5 @@
 	program = gpg
 [tag]
 	gpgSign = true
+[init]
+	defaultBranch = main
