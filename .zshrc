@@ -87,7 +87,7 @@ alias tmat="tmux a -t"
 # ------------------------------------------------------------------------------
 # Automatically input "ls -al" after each "cd"
 cd() {
-	builtin cd "$@" && ls -al
+	builtin cd "$@" && ls -alh
 }
 
 
