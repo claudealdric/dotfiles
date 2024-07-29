@@ -47,7 +47,7 @@ return {
 	end,
 	keys = {
 		{
-			"<leader>f",
+			"<leader>ff",
 			"<cmd>Telescope find_files<cr>",
 			desc = "Find files, fuzzy finder-style",
 			noremap = true,
@@ -59,7 +59,7 @@ return {
 			noremap = true,
 		},
 		{
-			"<leader>b",
+			"<leader>bf",
 			"<cmd>Telescope buffers<cr>",
 			desc = "Find buffers, fuzzy finder-style",
 			noremap = true,
