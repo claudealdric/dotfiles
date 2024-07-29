@@ -10,6 +10,7 @@ opt.undofile = true
 opt.colorcolumn = "80"
 opt.iskeyword:remove({ "_" }) -- delete words between "_"
 opt.textwidth = 80
+opt.scrolloff = 5
 
 -- tabs & indentation
 opt.tabstop = 4
