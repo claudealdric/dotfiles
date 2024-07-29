@@ -10,6 +10,7 @@ return {
 			"eslint_d",
 			"golangci-lint",
 			"prettierd",
+			"stylua",
 		},
 		run_on_start = true,
 	},
