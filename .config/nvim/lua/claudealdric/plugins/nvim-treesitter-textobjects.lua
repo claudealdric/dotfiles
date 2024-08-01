@@ -20,6 +20,14 @@ return {
 						query = "@function.inner",
 						desc = "Select inner part of function",
 					},
+					["aa"] = {
+						query = "@parameter.outer",
+						desc = "Select outer part of parameter",
+					},
+					["ia"] = {
+						query = "@parameter.inner",
+						desc = "Select inner part of parameter",
+					},
 					["ac"] = {
 						query = "@class.outer",
 						desc = "Select outer part of class",
