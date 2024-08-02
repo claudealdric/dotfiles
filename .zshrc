@@ -17,6 +17,9 @@ export EDITOR="nvim"
 export GPG_TTY=$(tty)
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+# Go
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 # Ruby
 export PATH="$HOMEBREW_PREFIX/opt/ruby/bin:$PATH"
 export LDFLAGS="-L$HOMEBREW_PREFIX/opt/ruby/lib"
