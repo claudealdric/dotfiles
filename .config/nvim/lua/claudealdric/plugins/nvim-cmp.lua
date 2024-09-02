@@ -10,6 +10,14 @@ return {
 	config = function()
 		local cmp = require("cmp")
 		local luasnip = require("luasnip")
+		luasnip.add_snippets("go", {
+			-- trigger is `iferr`
+			luasnip.snippet("iferr", {
+				luasnip.text_node({ "if err != nil {", "\t" }),
+				luasnip.insert_node(1),
+				luasnip.text_node({ "", "}" }),
+			}),
+		})
 		-- ./nvim-cmp.lua
 		-- loads vscode style snippets from installed plugins
 		-- (e.g., friendly-snippets)
