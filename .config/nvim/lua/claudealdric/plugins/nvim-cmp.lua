@@ -17,6 +17,12 @@ return {
 				luasnip.insert_node(1),
 				luasnip.text_node({ "", "}" }),
 			}),
+			luasnip.snippet("packagemain", {
+				luasnip.text_node({ "package main" }),
+				luasnip.text_node({ "", "", "func main() {", "\t" }),
+				luasnip.insert_node(1),
+				luasnip.text_node({ "", "}" }),
+			}),
 		})
 		-- ./nvim-cmp.lua
 		-- loads vscode style snippets from installed plugins
