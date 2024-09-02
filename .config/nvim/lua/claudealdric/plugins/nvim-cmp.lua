@@ -23,6 +23,11 @@ return {
 				luasnip.insert_node(1),
 				luasnip.text_node({ "", "}" }),
 			}),
+			luasnip.snippet("gofunc", {
+				luasnip.text_node({ "go func () {", "\t" }),
+				luasnip.insert_node(1),
+				luasnip.text_node({ "", "}()" }),
+			}),
 		})
 		-- ./nvim-cmp.lua
 		-- loads vscode style snippets from installed plugins
