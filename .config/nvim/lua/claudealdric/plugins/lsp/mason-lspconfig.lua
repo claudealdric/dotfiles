@@ -21,7 +21,7 @@ return {
 			"markdown_oxide",
 			"pyright",
 			"sqls",
-			"tsserver",
+			"ts_ls",
 			"vimls",
 			"yamlls",
 		},
