@@ -44,6 +44,14 @@ return {
 						query_group = "locals",
 						desc = "Select language scope",
 					},
+					["ii"] = {
+						query = "@conditional.inner",
+						desc = "Select inner part of conditional",
+					},
+					["ai"] = {
+						query = "@conditional.outer",
+						desc = "Select outer part of conditional",
+					},
 				},
 				-- You can choose the select mode (default is charwise 'v')
 				--
