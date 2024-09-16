@@ -5,10 +5,6 @@
 # ------------------------------------------------------------------------------
 bindkey -v
 setopt IGNOREEOF # accidentally pressing Ctrl + d keeps closing the zsh session
-if [ -d ".ssh" ]; then
-	ssh-add -l > /dev/null || ssh-add ~/.ssh/id_ed25519 # add ssh key to agent
-fi
-eval "$($(which brew) shellenv)" # set up homebrew
 
 # ------------------------------------------------------------------------------
 # Exports
@@ -20,12 +16,10 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 # Go
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
-# Ruby
-export PATH="$HOMEBREW_PREFIX/opt/ruby/bin:$PATH"
-export LDFLAGS="-L$HOMEBREW_PREFIX/opt/ruby/lib"
-export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/ruby/include"
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
+# Neovim
+export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # ------------------------------------------------------------------------------
 # P10k settings (prompt)
@@ -147,7 +141,7 @@ set_up_completion() {
 set_up_plugins() {
 	set_up_plugin_manager
 	install_plugins
-	set_up_completion
+	# set_up_completion
 }
 
 set_up_plugins
