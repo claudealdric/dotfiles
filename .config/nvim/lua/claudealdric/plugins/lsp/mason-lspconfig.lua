@@ -20,6 +20,7 @@ return {
 			"lua_ls",
 			"markdown_oxide",
 			"pyright",
+			"rust_analyzer",
 			"sqls",
 			"ts_ls",
 			"vimls",
