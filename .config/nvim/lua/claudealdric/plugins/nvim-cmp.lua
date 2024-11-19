@@ -28,6 +28,11 @@ return {
 				luasnip.insert_node(1),
 				luasnip.text_node({ "", "}()" }),
 			}),
+			luasnip.snippet("print", {
+				luasnip.text_node({ "fmt.Println(" }),
+				luasnip.insert_node(1),
+				luasnip.text_node({ ")" }),
+			}),
 		})
 		-- ./nvim-cmp.lua
 		-- loads vscode style snippets from installed plugins
