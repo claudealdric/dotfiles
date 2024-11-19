@@ -19,6 +19,10 @@ keymap.set(
 	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
 	{ desc = "Substitute the current term under the cursor", noremap = true }
 )
+keymap.set("n", "<leader>qq", "<cmd>q<cr>", {
+	desc = "Quit",
+	noremap = true,
+})
 
 -- visual mode
 -- "greatest remap ever" —Primeagen
