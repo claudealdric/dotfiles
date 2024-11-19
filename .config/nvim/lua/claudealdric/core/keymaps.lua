@@ -23,6 +23,10 @@ keymap.set("n", "<leader>qq", "<cmd>q<cr>", {
 	desc = "Quit",
 	noremap = true,
 })
+keymap.set("n", "<leader>wq", "<cmd>wq<cr>", {
+	desc = "Save and quit",
+	noremap = true,
+})
 
 -- visual mode
 -- "greatest remap ever" —Primeagen
