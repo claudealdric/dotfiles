@@ -34,6 +34,13 @@ return {
 				luasnip.text_node({ ")" }),
 			}),
 		})
+		luasnip.add_snippets("javascript", {
+			luasnip.snippet("clog", {
+				luasnip.text_node({ "console.log(" }),
+				luasnip.insert_node(1),
+				luasnip.text_node({ ")" }),
+			}),
+		})
 		-- ./nvim-cmp.lua
 		-- loads vscode style snippets from installed plugins
 		-- (e.g., friendly-snippets)
