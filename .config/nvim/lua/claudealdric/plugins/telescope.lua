@@ -47,6 +47,30 @@ return {
 	end,
 	keys = {
 		{
+			"<leader>tr",
+			"<cmd>Telescope lsp_references<cr>",
+			desc = "Lists LSP references for word under the cursor",
+			noremap = true,
+		},
+		{
+			"<leader>tds",
+			"<cmd>Telescope lsp_document_symbols<cr>",
+			desc = "Lists LSP document symbols in the current buffer",
+			noremap = true,
+		},
+		{
+			"<leader>tim",
+			"<cmd>Telescope lsp_implementations<cr>",
+			desc = "Go to the implementation of the word under the cursor if there's only one, otherwise show all options in Telescope",
+			noremap = true,
+		},
+		{
+			"<leader>tic",
+			"<cmd>Telescope lsp_incoming_calls<cr>",
+			desc = "Lists LSP incoming calls for word under the cursor",
+			noremap = true,
+		},
+		{
 			"<leader>ff",
 			"<cmd>Telescope find_files<cr>",
 			desc = "Find files, fuzzy finder-style",
@@ -71,7 +95,7 @@ return {
 			noremap = true,
 		},
 		{
-			"<leader>gs",
+			"<leader>grs",
 			"<cmd>Telescope grep_string<cr>",
 			desc = "Searches for the string under your cursor or selection in your current working directory",
 			noremap = true,
@@ -89,15 +113,45 @@ return {
 			noremap = true,
 		},
 		{
-			"<leader>m",
+			"<leader>km",
 			"<cmd>Telescope keymaps<cr>",
 			desc = "Lists normal mode keymappings",
 			noremap = true,
 		},
 		{
-			"<leader>gc",
+			"<leader>gb",
 			"<cmd>Telescope git_bcommits<cr>",
-			desc = "Lists commits for current buffer with diff preview",
+			desc = "Lists current buffer commits with diff preview",
+			noremap = true,
+		},
+		{
+			"<leader>gc",
+			"<cmd>Telescope git_commits<cr>",
+			desc = "Lists commits with diff preview",
+			noremap = true,
+		},
+		{
+			"<leader>gs",
+			"<cmd>Telescope git_status<cr>",
+			desc = "Lists current changes per file with diff preview and add action. (Multi-selection still WIP)",
+			noremap = true,
+		},
+		{
+			"<leader>gc",
+			"<cmd>Telescope git_commits<cr>",
+			desc = "Lists commits with diff preview",
+			noremap = true,
+		},
+		{
+			"<leader>gc",
+			"<cmd>Telescope git_commits<cr>",
+			desc = "Lists commits with diff preview",
+			noremap = true,
+		},
+		{
+			"<leader>gc",
+			"<cmd>Telescope git_commits<cr>",
+			desc = "Lists commits with diff preview",
 			noremap = true,
 		},
 		{
