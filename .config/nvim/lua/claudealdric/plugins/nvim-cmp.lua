@@ -33,6 +33,24 @@ return {
 				luasnip.insert_node(1),
 				luasnip.text_node({ ")" }),
 			}),
+			luasnip.snippet("functest", {
+				luasnip.text_node({ "func Test" }),
+				luasnip.insert_node(1),
+				luasnip.text_node({ "(t *testing.T) {}" }),
+			}),
+			luasnip.snippet("writefile", {
+				luasnip.text_node({
+					"file, _ := json.MarshalIndent(",
+				}),
+				luasnip.insert_node(1),
+				luasnip.text_node({
+					', "", "  ");',
+				}),
+				luasnip.text_node({
+					"",
+					' _ = os.WriteFile(".json", file, 0644)',
+				}),
+			}),
 		})
 		luasnip.add_snippets("javascript", {
 			luasnip.snippet("clog", {
