@@ -71,6 +71,12 @@ return {
 			noremap = true,
 		},
 		{
+			"<leader>fb",
+			"<cmd>Telescope buffers<cr>",
+			desc = "Lists open buffers in current neovim instance",
+			noremap = true,
+		},
+		{
 			"<leader>ff",
 			"<cmd>Telescope find_files<cr>",
 			desc = "Find files, fuzzy finder-style",
