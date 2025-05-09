@@ -17,7 +17,7 @@ return {
 		conform.setup({
 			formatters_by_ft = {
 				css = { "prettierd", "prettier" },
-				go = { "gofmt" },
+				go = { "gofumpt", "gci" },
 				graphql = { "prettierd", "prettier" },
 				html = { "prettierd", "prettier" },
 				javascript = { "prettierd", "prettier" },
