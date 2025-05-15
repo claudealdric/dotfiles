@@ -79,7 +79,7 @@ return {
 		})
 
 		vim.keymap.set({ "n", "v" }, "<leader>;", function()
-			require("conform").format()
+			conform.format({ async = true, lsp_format = "fallback" })
 		end, { desc = "Format file (or range in visual mode)" })
 
 		vim.api.nvim_create_user_command("FormatDisable", function(args)
