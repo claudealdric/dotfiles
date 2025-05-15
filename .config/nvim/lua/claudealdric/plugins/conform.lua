@@ -16,18 +16,34 @@ return {
 
 		conform.setup({
 			formatters_by_ft = {
-				css = { "prettierd", "prettier" },
+				css = { "prettierd", "prettier", stop_after_first = true },
 				go = { "gofumpt", "gci" },
-				graphql = { "prettierd", "prettier" },
-				html = { "prettierd", "prettier" },
-				javascript = { "prettierd", "prettier" },
-				javascriptreact = { "prettierd", "prettier" },
-				json = { "prettierd", "prettier" },
+				graphql = { "prettierd", "prettier", stop_after_first = true },
+				html = { "prettierd", "prettier", stop_after_first = true },
+				javascript = {
+					"prettierd",
+					"prettier",
+					stop_after_first = true,
+				},
+				javascriptreact = {
+					"prettierd",
+					"prettier",
+					stop_after_first = true,
+				},
+				json = { "prettierd", "prettier", stop_after_first = true },
 				lua = { "stylua" },
-				markdown = { "prettierd", "prettier" },
-				typescript = { "prettierd", "prettier" },
-				typescriptreact = { "prettierd", "prettier" },
-				yaml = { "prettierd", "prettier" },
+				markdown = { "prettierd", "prettier", stop_after_first = true },
+				typescript = {
+					"prettierd",
+					"prettier",
+					stop_after_first = true,
+				},
+				typescriptreact = {
+					"prettierd",
+					"prettier",
+					stop_after_first = true,
+				},
+				yaml = { "prettierd", "prettier", stop_after_first = true },
 				-- Use the "_" filetype to run formatters on filetypes that don't
 				-- have other formatters configured.
 				["_"] = { "trim_whitespace" },
