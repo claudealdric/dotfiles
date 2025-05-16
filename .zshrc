@@ -61,23 +61,15 @@ setopt hist_find_no_dups
 # ------------------------------------------------------------------------------
 # Aliases
 # ------------------------------------------------------------------------------
-alias ls="ls --color" #! must come before any other ls commands
+# General
 alias ".."="cd .."
 alias "..."="cd ../.."
 alias "...."="cd ../../.."
 alias "....."="cd ../../../.."
-alias "gp!"="git push --force-with-lease"
-alias gstap="git stash pop"
+alias ls="ls --color" #! must come before any other ls commands
 alias c="clear"
 alias cg="cargo"
 alias cgr="cargo run"
-alias gac="git add --all && git commit"
-alias gdhh="git diff HEAD^ HEAD"
-alias glgo="git log --oneline"
-alias gob="go build -o /dev/null ./..."
-alias gor="go run ."
-alias got="go test ./..."
-alias gov="go vet ./..."
 alias l="ls -alh"
 alias ng="nvim ~/.gitconfig"
 alias ni="nvim ~/.zshrc"
@@ -86,6 +78,35 @@ alias nz="nvim ~/.zshrc"
 alias pn="pnpm"
 alias sd="cd ~/dotfiles && stow --adopt --restow . && cd -"
 alias sz="source ~/.zshrc"
+
+# Git
+alias "gp!"="git push --force-with-lease"
+alias gac="git add --all && git commit"
+alias gcnv="git commit --verbose --no-verify"
+alias gdhh="git diff HEAD^ HEAD"
+alias glgo="git log --oneline"
+alias glgog="git log --oneline --graph"
+alias gpnv="git push --no-verify"
+alias gstal="git stash list"
+alias gstapo="git stash pop"
+alias gstapu="git stash push"
+
+# Go
+alias gob="go build -o /dev/null ./..."
+alias gor="go run ."
+alias got="go test ./..."
+alias gov="go vet ./..."
+
+# Makefile
+alias mb="make build"
+alias mc="make check"
+alias mf="make fmt"
+alias ml="make lint"
+alias mr="make run"
+alias mt="make test"
+alias mve="make vendor"
+
+# tmux
 alias t1="~/dotfiles/scripts/term1"
 alias t2="~/dotfiles/scripts/term2"
 alias t3="~/dotfiles/scripts/term3"
@@ -99,6 +120,26 @@ alias tmat="tmux a -t"
 # Automatically input "ls -al" after each "cd"
 cd() {
 	builtin cd "$@" && ls -alh
+}
+
+gdl() {
+	git diff $1^ $1
+}
+
+gclg() {
+	git clone https://stash.vscocorp.com/scm/lbrands/$1-go.git
+}
+
+gcld() {
+	git clone https://stash.vscocorp.com/scm/out/$1-deploy.git
+}
+
+gcla() {
+	gclg $1 &
+	gcld $1 &
+	echo "Cloning started"
+	wait
+	echo "Cloning finished"
 }
 
 
