@@ -119,7 +119,7 @@ return {
 			noremap = true,
 		},
 		{
-			"<leader>km",
+			"<leader>m",
 			"<cmd>Telescope keymaps<cr>",
 			desc = "Lists normal mode keymappings",
 			noremap = true,
