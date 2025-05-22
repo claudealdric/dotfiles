@@ -147,6 +147,12 @@ gcla() {
 	echo "Cloning finished"
 }
 
+ns () {
+	local nanoseconds=$1
+	local seconds=$(echo "scale=9; $nanoseconds / 1000000000" | bc)
+	echo "$seconds s"
+}
+
 
 # ------------------------------------------------------------------------------
 # Plugins
