@@ -86,15 +86,20 @@ alias gcnv="git commit --verbose --no-verify"
 alias gdhh="git diff HEAD^ HEAD"
 alias glgo="git log --oneline"
 alias glgog="git log --oneline --graph"
+alias glgpev="git log --stat --patch -- . ':(exclude)vendor/'"
 alias gpnv="git push --no-verify"
 alias gstal="git stash list"
 alias gstapo="git stash pop"
 alias gstapu="git stash push"
 
 # Go
+alias gmt="go mod tidy"
+alias gmtv="go mod tidy && go mod vendor"
+alias gmv="go mod vendor"
 alias gob="go build -o /dev/null ./..."
 alias gor="go run ."
 alias got="go test ./..."
+alias gotr="go test -race ./..."
 alias gov="go vet ./..."
 
 # Makefile
