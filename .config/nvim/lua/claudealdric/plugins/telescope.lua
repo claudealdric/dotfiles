@@ -84,6 +84,11 @@ return {
 		},
 		{
 			"<leader>gf",
+			function()
+				require("telescope.builtin").live_grep({
+					glob_pattern = "!vendor/*",
+				})
+			end,
 			"<cmd>Telescope live_grep<cr>",
 			desc = "Perform grep on the files in the current working directory",
 			noremap = true,
