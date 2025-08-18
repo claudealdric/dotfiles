@@ -34,6 +34,4 @@ opt.splitbelow = true -- when the window splits horizontally, go to the one belo
 -- aesthetics
 vim.g.netrw_liststyle = 3 -- tree style listing
 vim.g.netrw_banner = 0 -- remove the informational first few lines
-vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-	border = "rounded",
-})
+vim.opt.winborder = "rounded"
