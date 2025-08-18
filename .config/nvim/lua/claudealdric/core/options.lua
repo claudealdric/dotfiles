@@ -7,7 +7,7 @@ opt.number = true -- absolute line number for current line
 opt.wrap = false -- disable line wrapping
 opt.swapfile = false
 opt.undofile = true
-opt.colorcolumn = "80"
+opt.colorcolumn = "80,100"
 opt.iskeyword:remove({ "_" }) -- delete words between "_"
 opt.textwidth = 80
 opt.scrolloff = 5
