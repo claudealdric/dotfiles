@@ -112,12 +112,14 @@ alias mt="make test"
 alias mve="make vendor"
 
 # tmux
+alias hs3="~/dotfiles/scripts/hsplit3"
 alias t1="~/dotfiles/scripts/term1"
 alias t2="~/dotfiles/scripts/term2"
 alias t3="~/dotfiles/scripts/term3"
 alias t4="~/dotfiles/scripts/term4"
 alias tkser="tmux kill-server"
 alias tmat="tmux a -t"
+alias vs3="~/dotfiles/scripts/vsplit3"
 
 # ------------------------------------------------------------------------------
 # Utility functions
