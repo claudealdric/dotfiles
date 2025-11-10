@@ -147,6 +147,16 @@ gcla() {
 	echo "Cloning finished"
 }
 
+gfs() {
+	git fetch
+	git switch $1
+}
+
+gsl() {
+	git switch $1
+	git pull
+}
+
 ns () {
 	local nanoseconds=$1
 	local seconds=$(echo "scale=9; $nanoseconds / 1000000000" | bc)
