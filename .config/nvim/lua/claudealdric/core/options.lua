@@ -35,3 +35,11 @@ opt.splitbelow = true -- when the window splits horizontally, go to the one belo
 vim.g.netrw_liststyle = 3 -- tree style listing
 vim.g.netrw_banner = 0 -- remove the informational first few lines
 vim.opt.winborder = "rounded"
+vim.api.nvim_set_hl(0, "WinBar", {
+	bg = "#25363B",
+	bold = true,
+})
+vim.api.nvim_set_hl(0, "WinBarNC", {
+	bg = "#25363B",
+	bold = true,
+})
